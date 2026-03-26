@@ -1,0 +1,16 @@
+app = "manastithi-api"
+primary_region = "bom"  # Mumbai - closest to India
+
+[build]
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[env]
+  ENVIRONMENT = "production"
+  HOST = "0.0.0.0"
+  PORT = "8000"
